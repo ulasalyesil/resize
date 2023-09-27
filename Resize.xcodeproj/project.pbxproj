@@ -12,6 +12,8 @@
 		73FA879C2AC3754C00025DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FA879B2AC3754C00025DCB /* Assets.xcassets */; };
 		73FA879F2AC3754C00025DCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FA879E2AC3754C00025DCB /* Preview Assets.xcassets */; };
 		73FA87A82AC4057D00025DCB /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FA87A72AC4057D00025DCB /* LabeledTextField.swift */; };
+		73FA87AC2AC4704200025DCB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FA87AB2AC4704200025DCB /* HeaderView.swift */; };
+		73FA87AE2AC474B000025DCB /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FA87AD2AC474B000025DCB /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		73FA879E2AC3754C00025DCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73FA87A02AC3754C00025DCB /* Resize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Resize.entitlements; sourceTree = "<group>"; };
 		73FA87A72AC4057D00025DCB /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
+		73FA87AB2AC4704200025DCB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		73FA87AD2AC474B000025DCB /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				73FA87A72AC4057D00025DCB /* LabeledTextField.swift */,
+				73FA87AB2AC4704200025DCB /* HeaderView.swift */,
+				73FA87AD2AC474B000025DCB /* FormView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 			files = (
 				73FA879A2AC3754B00025DCB /* ContentView.swift in Sources */,
 				73FA87982AC3754B00025DCB /* ResizeApp.swift in Sources */,
+				73FA87AE2AC474B000025DCB /* FormView.swift in Sources */,
 				73FA87A82AC4057D00025DCB /* LabeledTextField.swift in Sources */,
+				73FA87AC2AC4704200025DCB /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +299,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -318,6 +327,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,16 +9,19 @@ import SwiftUI
 
 struct LabeledTextField: View {
     
-    @State var inputText: Int = 0
+    @Binding var value: CGFloat
+    @Binding var label: String
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Width")
+            Text(label)
                 .foregroundStyle(.secondary)
+            TextField(label, value: $value, formatter: NumberFormatter())
+                .textFieldStyle(.roundedBorder)
         }
     }
 }
 
-#Preview {
-    LabeledTextField()
-}
+//#Preview {
+//    LabeledTextField(value: 1024.0, label: "Height")
+//}

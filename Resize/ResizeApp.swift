@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ResizeApp: App {
+    
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Resize", systemImage: "square.resize") {
             ContentView()
         }
+        .menuBarExtraStyle(.window)
     }
 }
